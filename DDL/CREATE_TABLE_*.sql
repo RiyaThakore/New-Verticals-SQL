@@ -20,8 +20,7 @@ CREATE TABLE AccountOwner_Business_Mapping (
     account_owner VARCHAR(255),
     business_id INT,
     region_id INT,
-    PRIMARY KEY (account_owner, business_id),
-    FOREIGN KEY (business_id) REFERENCES BusinessData(business_id)
+    PRIMARY KEY (account_owner, business_id)
 );
 
 -- Create Region_Mapping table
