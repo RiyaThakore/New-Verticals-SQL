@@ -9,7 +9,7 @@ CREATE TABLE DeliveryData (
 
 -- Create BusinessData table
 CREATE TABLE BusinessData (
-    business_id INT PRIMARY KEY,
+    business_id INT,
     business_name VARCHAR(255),
     store_id INT,
     dashpass VARCHAR(3)
