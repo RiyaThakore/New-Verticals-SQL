@@ -1,5 +1,5 @@
 
-SELECT COUNT(DISTINCT store_id)
+SELECT COUNT(DISTINCT store_id) AS number_of_stores
 , COUNT(DISTINCT CASE WHEN dashpass = 'Yes' THEN store_id END) AS On_DashPass 
 --, COUNT(CASE WHEN dashpass = 'No' THEN 1 ELSE NULL END) AS Not_On_DashPass
 FROM BusinessData
