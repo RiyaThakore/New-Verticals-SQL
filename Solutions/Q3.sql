@@ -1,5 +1,4 @@
-
-
+-- to get Kevin and Carla specific stores by joining table
 SELECT
 COUNT(DISTINCT CASE WHEN account_owner = 'Kevin' THEN store_id END) AS kevin_owned_stores
 , COUNT(DISTINCT CASE WHEN account_owner = 'Carla' THEN store_id END) AS carla_owned_stores
